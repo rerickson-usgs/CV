@@ -72,7 +72,8 @@
 
 % Bibliography formatting
 
-\usepackage[sorting=ynt,citestyle=authoryear,bibstyle=authoryear-comp,defernumbers=true,maxnames=20,giveninits=true, bibencoding=utf8, terseinits=true, uniquename=init,dashed=false,doi=false,isbn=false,natbib=true,backend=biber]{biblatex}
+\usepackage[sorting=ynt,citestyle=authoryear,bibstyle=authoryear-comp,defernumbers=true,maxnames=20,giveninits=true, bibencoding=utf8, terseinits=true, uniquename=init,dashed=false,
+doi=true,isbn=false,natbib=true,backend=biber]{biblatex}
 
 \DeclareFieldFormat{url}{\url{#1}}
 \DeclareFieldFormat[article]{pages}{#1}
@@ -102,7 +103,7 @@
 % Bibliography categories
 \def\makebibcategory#1#2{\DeclareBibliographyCategory{#1}\defbibheading{#1}{\section*{#2}}}
 \makebibcategory{books}{Books}
-\makebibcategory{papers}{Refereed research papers}
+\makebibcategory{article}{Publications}
 \makebibcategory{chapters}{Book chapters}
 \makebibcategory{conferences}{Papers in refereed conference proceedings}
 \makebibcategory{techreports}{Unpublished working papers}
